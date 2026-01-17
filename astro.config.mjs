@@ -4,6 +4,8 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 
 import cloudflare from "@astrojs/cloudflare";
+import remarkMath from 'remark-math';
+import rehypeMathjax from 'rehype-mathjax';
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,4 +16,8 @@ export default defineConfig({
 			enabled: true,
 		},
 	}),
+	markdown: {
+		remarkPlugins: [remarkMath],
+		rehypePlugins: [rehypeMathjax],
+	},
 });
