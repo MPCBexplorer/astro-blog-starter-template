@@ -1,0 +1,26 @@
+---
+title: "放缩"
+description: "由导数和代换推出的指对放缩"
+pubDate: "2026-01-08"
+heroImage: "/blog-placeholder-4.jpg"
+---
+import { Image } from 'astro:assets';
+import ImportMathJax from "../../components/ImportMathJax.astro";
+
+<ImportMathJax/>
+在不等式放缩技巧中，指对放缩是很常见的一类放缩。首先是四大基本公式：
+- ##### x-1≥lnx,x∈(0,+∞)
+- ##### e<sup>x</sup>≥x+1,x∈ℝ
+- ##### e<sup>x</sup>≥ex,x∈ℝ
+- ##### lnx≤x/e,x∈(0,+∞)
+\( \frac\{e}\{x} \)
+
+下面给出证明： 
+<Image src="/blogPics/DerivativeEstimation/prove1.png" alt="prove1" width={760} height={760*225/400}/>
+<Image src="/blogPics/DerivativeEstimation/prove2.png" alt="prove1" width={760} height={760*225/400}/>
+<Image src="/blogPics/DerivativeEstimation/prove3.png" alt="prove1" width={760} height={760*225/400}/>
+<Image src="/blogPics/DerivativeEstimation/prove4.png" alt="prove1" width={760} height={760*225/400}/>
+其实，这些式子间存在如下的代换关系：
+<Image src="/blogPics/DerivativeEstimation/relations1.png" alt="prove1" width={760} height={760*225/400}/>
+类似的，通过代换我们可以得到下面一系列式子：
+<Image src="/blogPics/DerivativeEstimation/relations2.png" alt="prove1" width={760} height={760*225/400}/>
