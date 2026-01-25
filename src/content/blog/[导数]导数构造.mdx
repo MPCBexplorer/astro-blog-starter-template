@@ -1,0 +1,35 @@
+---
+title: "[导数]导数构造"
+description: "一般构造、导原构造和指对跨阶同构"
+pubDate: "2026-01-25"
+heroImage: "/blog-placeholder-3.jpg"
+---
+ # 一般构造
+一般构造即通过同增减，使不等号两边形成同构式，对同构式求导分析单调性求解。
+例如：$f(x)-f(2)=x-2$
+ # 导原构造
+在导数相关的不等式问题中，条件式同时含有导函数和原函数，则可以使用导原构造，
+通过分析构造函数的单调性来求解。下面是参考表：
+| 已知条件式 | 可构造的函数 |
+| --- | --- |
+| $ xf'(x) + nf(x) > 0 $（或$ < 0 $） | $ F(x) = x^n f(x) $ |
+| $ f'(x) + nf(x) > 0 $（或$ < 0 $） | $ F(x) = e^{nx} f(x) $ |
+| $ f'(x) \sin x + f(x) \cos x > 0 $（或$ < 0 $） | $ F(x) = f(x) \sin x $ |
+| $ f'(x) \cos x + f(x) \sin x > 0 $（或$ < 0 $） | $ F(x) = \frac{f(x)}{\cos x} $ |
+| $ xf'(x) - nf(x) > 0 $（或$ < 0 $） | $ F(x) = \frac{f(x)}{x^n} $ |
+| $ f'(x) - f(x) > 0 $（或$ < 0 $） | $ F(x) = \frac{f(x)}{e^x} $ |
+| $ f'(x) - nf(x) > 0 $（或$ < 0 $） | $ F(x) = \frac{f(x)}{e^{nx}} $ |
+| $ f'(x) \sin x - f(x) \cos x > 0 $（或$ < 0 $） | $ F(x) = \frac{f(x)}{\sin x} $ |
+| $ f'(x) \cos x - f(x) \sin x > 0 $（或$ < 0 $） | $ F(x) = f(x) \cos x $ |
+# 指对构造
+指对构造指在指对跨阶时构造同构，指对跨阶这是指式子中同时出现指数项、一次项和对数项。
+指对同构的常见形式：
+- 积型：
+ 1. $ ae^a \leq \ln b \cdot e^{\ln b} $，构建$ f(x) = x e^x $；
+ 2. $ e^a \ln e^a \leq b \ln b $，构建$ f(x) = x \ln x $。
+- 商型：
+ 1. $ \frac{e^a}{a} \leq \frac{e^{\ln b}}{\ln b} $，构建$ f(x) = \frac{e^x}{x} $；
+ 2. $ \frac{e^a}{\ln e^a} \leq \frac{b}{\ln b} $，构建$ f(x) = \frac{x}{\ln x} $。
+- 和差型：
+ 1. $ e^a \pm a \leq e^{\ln b} \pm \ln b $，构建$ f(x) = e^x \pm x $；
+ 2. $ e^a \pm \ln e^a \leq b \pm \ln b $，构建$ f(x) = x \pm \ln x $。

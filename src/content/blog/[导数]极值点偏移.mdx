@@ -4,59 +4,60 @@ description: "导数极值点偏移题型"
 pubDate: "2026-01-18"
 heroImage: "/blog-placeholder-2.jpg"
 ---
-
+*整理自2026必刷题答案*<br/>
 **极值点偏移**的基本题型是研究函数的零点相较于极值点的偏移，证明与函数多个零点（一般是两个）的关
 系（最基础的是**和**与**极值点二倍**的关系）。
 
 ### 极值点偏移的几何意义
 
-极值点偏移现象在函数图像上有着直观的几何解释。当函数在极值点附近呈现非对称性4时，若存在两个不同的点 {/*prettier-ignore *//* ts-ignore */}$x_1, x_2$ 使得 {/* prettier-ignore *//* ts-ignore*/}$f(x_1) = f(x_2)$，则这两个点相对于极值点的位置关系就体现了偏移特性。
+极值点偏移现象在函数图像上有着直观的几何解释。当函数在极值点附近呈现非对称性4时，若存在两个不同的点 $x_1, x_2$ 使得 $f(x_1) = f(x_2)$，则这两个点相对于极值点的位置关系就体现了偏移特性。
 
-例如，对于单峰函数，如果 {/*prettier-ignore *//* ts-ignore */}$x_1 < x_{\text{极值}} < x_2$ 且 {/* prettier-ignore *//* ts-ignore */}$x_1 + x_2 > 2x_{\text{极值}}$，则称零点向右偏移；反之，若 {/* prettier-ignore *//* ts-ignore*/}$x_1 + x_2 < 2x_{\text{极值}}$，则称零点向左偏移。
+例如，对于单峰函数，如果 $x_1 < x_{\text{极值}} < x_2$ 且 $x_1 + x_2 > 2x_{\text{极值}}$，则称零点向右偏移；反之，若 $x_1 + x_2 < 2x_{\text{极值}}$，则称零点向左偏移。
 
 ### 常见研究方法
 
 ##### 1. 构造对称函数法
 
 解题步骤为将两个零点放到不等式两侧，利用函数单调性将比较自变量大小问题转化为比较函数值大小问
-题，再利用条件中的{/*prettier-ignore *//* ts-ignore */}$f(x_1)=f(x_2)$单元转化为关于一个零点的不等式，然后构造函数求最值证明{/* prettier-ignore *//* ts-ignore */}$f(x_1)>f(x_2)$
-或{/* prettier-ignore *//* ts-ignore */}$f(x_1)<f(x_2)$。此解法解题过程会构造类似于{/* prettier-ignore *//* ts-ignore */}$f(2-x)$这样的函数，这个函
-数的图象与{/* prettier-ignore *//* ts-ignore */}$f(x)$的图象关于直线{/* prettier-ignore *//* ts-ignore*/}$x=1$对称，所以方法一般称为构造对称函数法。这两个函数图象的差的正
+题，再利用条件中的$f(x_1)=f(x_2)$单元转化为关于一个零点的不等式，然后构造函数求最值证明$f(x_1)>f(x_2)$
+或$f(x_1)<f(x_2)$。此解法解题过程会构造类似于$f(2-x)$这样的函数，这个函
+数的图象与$f(x)$的图象关于直线$x=1$对称，所以方法一般称为构造对称函数法。这两个函数图象的差的正
 值体现在图象上，对应了零点相较于极值点偏移关系。
 
-处理极值点偏移问题中类似于{/*prettier-ignore *//* ts-ignore*/}$x_1+x_2>a(f(x_1)=f(x_2))$类型的问题的步骤：
+处理极值点偏移问题中类似于$x_1+x_2>a(f(x_1)=f(x_2))$类型的问题的步骤：
 
-1. 求导确定{/*prettier-ignore *//* ts-ignore */}$f(x)$的单调性，得到{/* prettier-ignore *//* ts-ignore */}$x_1$，{/* prettier-ignore *//* ts-ignore*/}$x_2$的范围；
-2. 构造函数{/*prettier-ignore *//* ts-ignore */}$F(x)=f(x)-f(a-x)$，求导得到{/* prettier-ignore *//* ts-ignore*/}$F(x)$恒正或恒负；
-3. 得到{/*prettier-ignore *//* ts-ignore */}$f(x_1)$与{/* prettier-ignore *//* ts-ignore */}$f(a-x_1)$的大小关系后，据{/* prettier-ignore *//* ts-ignore */}$x_1$复为{/* prettier-ignore *//* ts-ignore*/}$a-x_1$；
-4. 根据{/*prettier-ignore *//* ts-ignore */}$x_1$的范围，结合{/* prettier-ignore *//* ts-ignore */}$f(x)$的单调性，可得{/* prettier-ignore *//* ts-ignore */}$x_2$与{/* prettier-ignore *//* ts-ignore*/}$a-x_1$的大小关系，由此证得结论。
+1. 求导确定$f(x)$的单调性，得到$x_1$，$x_2$的范围；
+2. 构造函数$F(x)=f(x)-f(a-x)$，求导得到$F(x)$恒正或恒负；
+3. 得到$f(x_1)$与$f(a-x_1)$的大小关系后，据$x_1$复为$a-x_1$；
+4. 根据$x_1$的范围，结合$f(x)$的单调性，可得$x_2$与$a-x_1$的大小关系，由此证得结论。
 
 ##### 2. 比值代换、差值代换
 
-解题步骤为写出{/*prettier-ignore *//* ts-ignore */}$f(x_1)=f(x_2)$对应的代数式，尝试对{/* prettier-ignore *//* ts-ignore*/}$x_1,x_2$这两个元素进行消元，但题目一般无法用其中一
+解题步骤为写出$f(x_1)=f(x_2)$对应的代数式，尝试对$x_1,x_2$这两个元素进行消元，但题目一般无法用其中一
 个元素表示另一个元素，所以另外一般会构造新的主元表示它们。指数形式的函数问
 题一般较多用差值代换，对数形式的函数问题一般较多用比值代换。
 
 ##### 3. 二级结论：指数与值不等式、对数均值不等式
 
-对数均值不等式{/*prettier-ignore *//* ts-ignore*/}$\sqrt{ab} < \frac{a-b}{\ln a-\ln b} < \frac{a+b}{2}$ ($a>0,b>0,a\neq b$)
+对数均值不等式$\sqrt{ab} < \frac{a-b}{\ln a-\ln b} < \frac{a+b}{2}$ ($a>0,b>0,a\neq b$)
 
 ### 常见函数类型的极值点偏移
 
 #### 指数型函数
 
-对于形如 {/*prettier-ignore *//* ts-ignore */}$f(x) = (x-a)e^{kx}$ 的函数，其极值点偏移性质与参数 {/* prettier-ignore *//* ts-ignore */}$k$ 的符号密切相关。当 {/* prettier-ignore *//* ts-ignore */}$k > 0$ 时，函数增长迅速，偏移方向通常与 {/* prettier-ignore *//* ts-ignore*/}$k < 0$ 时相反。
+对于形如 $f(x) = (x-a)e^{kx}$ 的函数，其极值点偏移性质与参数 $k$ 的符号密切相关。当 $k > 0$ 时，函数增长迅速，偏移方向通常与 $k < 0$ 时相反。
 
 #### 对数型函数
 
-对于形如 {/*prettier-ignore *//* ts-ignore*/}$f(x) = \ln(x+a) - bx$ 的函数，由于对数函数的增长特性，其极值点偏移往往表现出特定的规律，常需运用对数均值不等式进行证明。
+对于形如 $f(x) = \ln(x+a) - bx$ 的函数，由于对数函数的增长特性，其极值点偏移往往表现出特定的规律，常需运用对数均值不等式进行证明。
 
 ### 例题
 
-考虑函数 {/*prettier-ignore *//* ts-ignore */}$f(x) = xe^{-x}$，已知 {/* prettier-ignore *//* ts-ignore */}$f(x_1) = f(x_2)$ 且 {/* prettier-ignore *//* ts-ignore */}$x_1 \neq x_2$，证明：{/* prettier-ignore *//* ts-ignore*/}$x_1 + x_2 > 2$。
+- 考虑函数 $f(x) = xe^{-x}$，已知 $f(x_1) = f(x_2)$ 且 $x_1 \neq x_2$，证明：$x_1 + x_2 > 2$。
 
-1. 首先求出函数的导数 {/*prettier-ignore *//* ts-ignore*/}$f'(x) = e^{-x}(1-x)$，确定函数的单调区间
-2. 确定极值点为 {/*prettier-ignore *//* ts-ignore*/}$x = 1$，这是函数的最大值点
-3. 利用构造对称函数法，设 {/*prettier-ignore *//* ts-ignore*/}$g(x) = f(x) - f(2-x)$
-4. 证明当 {/*prettier-ignore *//* ts-ignore */}$x < 1$ 时，{/* prettier-ignore *//* ts-ignore */}$g(x) < 0$；当 {/* prettier-ignore *//* ts-ignore */}$x > 1$ 时，{/* prettier-ignore *//* ts-ignore*/}$g(x) > 0$
-5. 结合 {/*prettier-ignore *//* ts-ignore */}$f(x_1) = f(x_2)$ 的条件，推导出 {/* prettier-ignore *//* ts-ignore*/}$x_1 + x_2 > 2$
+    1. 首先求出函数的导数 $f'(x) = e^{-x}(1-x)$，确定函数的单调区间
+    2. 确定极值点为 $x = 1$，这是函数的最大值点
+    3. 利用构造对称函数法，设 $g(x) = f(x) - f(2-x)$
+    4. 证明当 $x < 1$ 时，$g(x) < 0$；当 $x > 1$ 时，$g(x) > 0$
+    5. 结合 $f(x_1) = f(x_2)$ 的条件，推导出 $x_1 + x_2 > 2$
+- 函数 $f(x)=xln(x)$ 在
